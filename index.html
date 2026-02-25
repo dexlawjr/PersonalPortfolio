@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Dexter L. Law Jr.</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div id="container">
+
+        <nav>
+            <div class="nav-content">
+                <div class="brand-logo">
+                    <span class="initial">D</span>exter <span class="initial">L</span>aw <span class="initial">J</span>r.
+                </div>
+                
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="resume.html">CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="index-main">
+            <div class="hero-flex">
+                <div class="hero-text">
+                    <p class="greeting">HELLO, I'M</p>
+                    <h1>Dexter Law Jr.</h1>
+                    <h2 class="sub-headline">Technology & Business Solutions Consultant</h2>
+                    <p class="hero-bio">
+                        I am a Computer Engineering graduate from Texas A&M University. 
+                        My mission is to serve as a digital hub for high-level recruiters and consulting clients, 
+                        providing a unique bridge between hardware engineering and software development.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="resume.html" class="btn-primary">View CV</a>
+                        <a href="contact.html" class="btn-outline">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="image-circle-frame">
+                        <img src="images/headshot.jpeg" alt="Dexter Law Headshot">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2026. All Rights Reserved.</p>
+            <p><a href="mailto:e3045014@student.dcccd.edu">e3045014@student.dcccd.edu</a></p>
+        </footer>
+
+    </div>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
